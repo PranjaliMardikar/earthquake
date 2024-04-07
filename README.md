@@ -1,16 +1,26 @@
 Richter's Predictor: Modeling Earthquake Damage 
+
 Overview
+
+
 Based on aspects of building location and construction, your goal is to predict the level of damage to buildings caused by the 2015 Gorkha earthquake in Nepal.
+
+
 Problem description
+
 We're trying to predict the ordinal variable damage_grade, which represents a level of damage to the building that was hit by the earthquake. There are 3 grades of the damage:
 •	1 represents low damage 
 •	2 represents a medium amount of damage 
 •	3 represents almost complete destruction 
+
 Features
 
 The dataset mainly consists of information on the buildings' structure and their legal ownership. Each row in the dataset represents a specific building in the region that was hit by Gorkha earthquake.
 There are 39 columns in this dataset, where the building_id column is a unique and random identifier. The remaining 38 features are described in the section below. Categorical variables have been obfuscated random lowercase ascii characters. The appearance of the same character in distinct columns does not imply the same original value.
+
+
 Description
+
 •	geo_level_1_id, geo_level_2_id, geo_level_3_id (type: int): geographic region in which building exists, from largest (level 1) to most specific sub-region (level 3). Possible values: level 1: 0-30, level 2: 0-1427, level 3: 0-12567. 
 •	count_floors_pre_eq (type: int): number of floors in the building before the earthquake. 
 •	age (type: int): age of the building in years. 
@@ -47,8 +57,12 @@ Description
 •	has_secondary_use_gov_office (type: binary): flag variable that indicates if the building was used fas a government office. 
 •	has_secondary_use_use_police (type: binary): flag variable that indicates if the building was used as a police station. 
 •	has_secondary_use_other (type: binary): flag variable that indicates if the building was secondarily used for other purposes. 
+
+
  
 Feature data example
+
+
 
 Here's an example of one of the rows in the dataset so that you can see the kinds of values you might expect in the dataset. Some are numeric, some are categorical, and there are often missing values. 
 field	value
